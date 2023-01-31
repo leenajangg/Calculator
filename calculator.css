@@ -1,0 +1,42 @@
+* {background-color: #F4FCD9;
+   font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+   }
+
+#calculator {background-color: #C5D8A4;
+			text-align: center;
+			margin: 5%;
+			padding: 5%;
+			border: dotted;
+			border-width: 1vw;
+			border-color: #BB9981;
+			border-radius: 2.2vw;
+			}
+
+h1 {font-size: 4em;
+	color: #534340; 
+	background-color: #C5D8A4;
+	}
+	
+#box1, #box2, #box3 {font-size: 2em;
+					 margin: 2%;
+					 height: 5%;
+					 border-radius: 2.2vw;
+					 border-color: #BB9981;
+					 }
+					 
+button {font-size: 2em;
+		color: #534340; 
+		background-color: #BB9981;
+		margin: 1%;
+		height: 5%;
+		border-radius: 10vw;
+		border-color: #534340;
+		text-decoration: none;
+		}
+      
+p {font-size: 2em;
+   color: #534340;
+   background-color: #C5D8A4;
+   margin: 0;
+   }
+

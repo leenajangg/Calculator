@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+	<title> Multi-Functional Calculator </title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	
+<script>
+	
+		function doAdd() {
+		let sum;
+		let input1;
+		let input2;
+		input1 = document.getElementById ("box1").value;
+		console.log(input1);
+		input1 = Number(input1);
+		input2 = document.getElementById ("box2").value;
+		console.log(input2);
+		input2 = Number(input2);
+		sum = input1 + input2;
+		console.log(sum);
+		document.getElementById ("box3").value = sum;
+        document.getElementById("box3").style.color = "black";
+        if (sum < 0) {document.getElementById("box3").style.color = "red";}
+		}
+		
+		function doSubtract() {
+		let sum;
+		let input1;
+		let input2;
+		input1 = document.getElementById ("box1").value;
+		console.log(input1);
+		input1 = Number(input1);
+		input2 = document.getElementById ("box2").value;
+		console.log(input2);
+		input2 = Number(input2);
+		sum = input1 - input2;
+		console.log(sum);
+		document.getElementById ("box3").value = sum;
+        if (sum < 0) {document.getElementById("box3").style.color = "red";}
+        }
+        
+        function doDivision() {
+        let sum;
+        let input1;
+        let input2;
+    	input1 = document.getElementById("box1").value;
+        console.log(input1);
+        input1 = Number(input1);
+    	input2 = document.getElementById("box2").value;
+        console.log(input2);
+        input2 = Number(input2);
+        sum = input1 / input2;
+        console.log(sum);
+        document.getElementById("box3").value = sum;
+        document.getElementById("box3").style.color = "black";
+        if (sum < 0) {document.getElementById("box3").style.color = "red";}
+        }
+
+        function doMultiply() {
+        let sum;
+        let input1;
+        let input2;
+    	input1 = document.getElementById("box1").value;
+        input1 = Number(input1);
+        console.log(input1);
+    	input2 = document.getElementById("box2").value;
+        input2 = Number(input2);
+        console.log(input2);
+        sum = input1 * input2;
+        console.log(sum);
+        document.getElementById("box3").value = sum;
+        document.getElementById("box3").style.color = "black";
+        if (sum < 0) {document.getElementById("box3").style.color = "red";}
+        }
+
+        function doPower() {
+        let sum = 1;
+        let input1;
+        let input2;
+    	input1 = document.getElementById("box1").value;
+        input1 = Number(input1);
+        console.log(input1);
+    	input2 = document.getElementById("box2").value;
+        input2 = Number(input2);
+        console.log(input2);
+        for (let i = 0; i < input2; i=i+1) {sum = sum * input1;}
+        console.log(sum);
+        document.getElementById("box3").value = sum;
+        document.getElementById("box3").style.color = "black";
+        if (sum < 0) {document.getElementById("box3").style.color = "red";}
+        }
+        
+        function doClear() {
+        document.getElementById("box1").value = "";
+        document.getElementById("box2").value = "";
+        document.getElementById("box3").value = "";
+        }
+        
+</script>
+	
+</head>
+
+<body>
+
+<div id="calculator">
+
+	<h1> Multi-Functional Calculator </h1>
+	
+	<input type="text" id ="box1">
+	
+	<br>
+	
+	<button type="button" onclick="doAdd()">+</button>
+	
+	<button type="button" onclick="doSubtract()">-</button>
+			
+	<button type="button" onclick="doDivision()">/</button>
+	
+	<button type="button" onclick="doMultiply()">*</button>
+	
+	<button type="button" onclick="doPower()">^</button>
+	
+	<br>
+	
+	<input type="text" id="box2">
+	
+	<p> = </p>
+	
+	<br>
+	
+	<input type="text" id="box3">
+	
+	<br>
+	
+	<button type="button" onclick="doClear()"> clear </button>
+
+</div>
+
+</body>
